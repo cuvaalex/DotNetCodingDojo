@@ -7,15 +7,23 @@ namespace ChristMasTree
 {
     public class Branch
     {
-
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="branchPosition"></param>
         public Branch(int branchPosition)
         {
             this.BranchPosition = branchPosition;
 
             this.BranchSize = CalculateBranchSize();            
         }
-
+        /// <summary>
+        /// Size of the branch or the number of leaf
+        /// </summary>
         public virtual int BranchSize { get; set; }
+        /// <summary>
+        /// Branch position on the tree, where 1 = top of the tree
+        /// </summary>
         public int BranchPosition { get; set; }
 
         private int CalculateBranchSize()
@@ -30,6 +38,10 @@ namespace ChristMasTree
             }
         }        
 
+        /// <summary>
+        /// Draw a Branch String view.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder branch = new StringBuilder(BranchSize);
