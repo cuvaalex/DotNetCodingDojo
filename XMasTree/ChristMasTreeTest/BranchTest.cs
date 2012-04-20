@@ -10,6 +10,20 @@ namespace XMasTreeTest
     [TestFixture]
     public class BranchTest
     {
+
+        [Test]
+        public void ShouldNotThrowAnExceptionIfTheBranchPositionIsGreatherThan0()
+        {
+            new Branch(1);
+        }
+
+        [Test]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void ShouldThrowAnArgumentOutOfRangeExceptionIfTheBranchPositionIsLessThan1()
+        {
+            new Branch(-1);
+        }
+        
         [TestCase(4, 6, "* * * *")]
         [TestCase(3, 5, "* * *")]
         [TestCase(4, 4, "* * * *")]
@@ -25,7 +39,6 @@ namespace XMasTreeTest
             String branchDraw = branch.ToString();
             Assert.That(branchDraw, Is.EqualTo(expectedPatern));
         }
-
     
     }
 }

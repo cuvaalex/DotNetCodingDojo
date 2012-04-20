@@ -7,12 +7,14 @@ namespace ChristMasTree
 {
     public class Branch
     {
+        private static string ERROR_BRANCHPOS = "Branch position should be > 0";
+        private int branchPosition;
         /// <summary>
         /// Default Constructor
         /// </summary>
         /// <param name="branchPosition"></param>
         public Branch(int branchPosition)
-        {
+        {            
             this.BranchPosition = branchPosition;
 
             this.BranchSize = CalculateBranchSize();            
@@ -24,7 +26,23 @@ namespace ChristMasTree
         /// <summary>
         /// Branch position on the tree, where 1 = top of the tree
         /// </summary>
-        public int BranchPosition { get; set; }
+        public int BranchPosition {
+            get
+            {
+                return this.branchPosition;
+            }
+            set
+            {
+                if (value < 1)
+                {
+                    throw new ArgumentOutOfRangeException(ERROR_BRANCHPOS);
+                }
+                else
+                {
+                    this.branchPosition = value;
+                }
+            }
+        }
 
         private int CalculateBranchSize()
         {
