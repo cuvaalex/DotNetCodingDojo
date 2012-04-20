@@ -45,7 +45,7 @@ namespace ChristMasTree
         {
             IList<Branch> branches = GetBranches(treeSize);
 
-            Trunk trunk = GetTrunk(branches[TreeSize - 1].Size);
+            Trunk trunk = GetTrunk(branches[TreeSize - 1].BranchSize);
 
             StringBuilder tree = new StringBuilder();
             foreach (var branch in branches)

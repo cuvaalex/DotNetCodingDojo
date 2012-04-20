@@ -7,33 +7,33 @@ namespace ChristMasTree
 {
     public class Branch
     {
-        private int level;
 
-        public Branch(int level)
+        public Branch(int branchPosition)
         {
-            this.level = level;
+            this.BranchPosition = branchPosition;
 
-            this.Size = GetBranchSize(level);            
+            this.BranchSize = CalculateBranchSize();            
         }
 
-        private int GetBranchSize(int level)
+        public virtual int BranchSize { get; set; }
+        public int BranchPosition { get; set; }
+
+        private int CalculateBranchSize()
         {
-            if (level % 5 == 0)
+            if (BranchPosition % 5 == 0)
             {
-                return level - 1 - (level / 5);
+                return BranchPosition - 1 - (BranchPosition / 5);
             }
             else
             {
-                return level - (1 * (level / 5) + (level / 5));
+                return BranchPosition - (1 * (BranchPosition / 5) + (BranchPosition / 5));
             }
-        }
-
-        public int Size { get; set; }
+        }        
 
         public override string ToString()
         {
-            StringBuilder branch = new StringBuilder(Size);
-            for (int leaf = 1; leaf <= Size; leaf++)
+            StringBuilder branch = new StringBuilder(BranchSize);
+            for (int leaf = 1; leaf <= BranchSize; leaf++)
             {
                 branch.Append("* ");
             }

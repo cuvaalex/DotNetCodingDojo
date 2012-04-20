@@ -18,7 +18,7 @@ namespace XMasTreeTest
         {
 
             Branch branch = new Branch(level);
-            int branchSize = branch.Size;
+            int branchSize = branch.BranchSize;
 
             Assert.That(branchSize, Is.EqualTo(expected));
 
