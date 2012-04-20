@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristMasTree", "ChristMasTree\ChristMasTree.csproj", "{EF76E294-5FCC-469A-8A08-E0556B80483A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristMasTreeTest", "ChristMasTreeTest\ChristMasTreeTest.csproj", "{C0B83107-2033-4971-9F49-F2F663C032C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristMasTreeAcceptanceTest", "ChristMasTreeAcceptanceTest\ChristMasTreeAcceptanceTest.csproj", "{942E757F-21A3-4752-8930-2934200D4D5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristMasTreeSpec", "ChristMasTreeSpec\ChristMasTreeSpec.csproj", "{ED0FE137-5BF1-4FFF-A1E3-2A9980CB2751}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF76E294-5FCC-469A-8A08-E0556B80483A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF76E294-5FCC-469A-8A08-E0556B80483A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF76E294-5FCC-469A-8A08-E0556B80483A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF76E294-5FCC-469A-8A08-E0556B80483A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B83107-2033-4971-9F49-F2F663C032C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B83107-2033-4971-9F49-F2F663C032C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B83107-2033-4971-9F49-F2F663C032C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B83107-2033-4971-9F49-F2F663C032C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942E757F-21A3-4752-8930-2934200D4D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942E757F-21A3-4752-8930-2934200D4D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942E757F-21A3-4752-8930-2934200D4D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942E757F-21A3-4752-8930-2934200D4D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0FE137-5BF1-4FFF-A1E3-2A9980CB2751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0FE137-5BF1-4FFF-A1E3-2A9980CB2751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0FE137-5BF1-4FFF-A1E3-2A9980CB2751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0FE137-5BF1-4FFF-A1E3-2A9980CB2751}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
