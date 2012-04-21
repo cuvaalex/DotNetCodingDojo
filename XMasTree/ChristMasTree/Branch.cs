@@ -69,5 +69,18 @@ namespace ChristMasTree
             }
             return branch.ToString().TrimEnd();
         }
+
+        public static int MaxBranchSize(IList<Branch> branches)
+        {
+            return branches.Max(b => b.ToString().Length);
+        }
+
+        internal string ToString(int padding)
+        {
+            String branch = this.ToString();
+            int totalLength = padding + (branch.Length / 2);
+            branch = branch.PadLeft(totalLength);            
+            return branch;
+        }
     }
 }

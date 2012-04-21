@@ -43,18 +43,27 @@ namespace ChristMasTree
         /// </summary>
         public void Draw()
         {
-            IList<Branch> branches = GetBranches(treeSize);
+            IList<Branch> branches;
+            Trunk trunk;
+            BuildTreeObjects(out branches, out trunk);
 
-            Trunk trunk = GetTrunk(branches[TreeSize - 1].BranchSize);
+            int maxBranchSize = Branch.MaxBranchSize(branches);
+            int padding = (maxBranchSize+1) / 2; 
 
             StringBuilder tree = new StringBuilder();
             foreach (var branch in branches)
             {
-                tree.AppendLine(branch.ToString());
+                tree.AppendLine(branch.ToString(padding));
             }
-            tree.AppendLine(trunk.ToString());
+            tree.AppendLine(trunk.ToString(padding));
 
             treePatern = tree.ToString().TrimEnd();
+        }
+
+        private void BuildTreeObjects(out IList<Branch> branches, out Trunk trunk)
+        {
+            branches = GetBranches(treeSize);
+            trunk = GetTrunk(branches[TreeSize - 1].BranchSize);
         }
 
         /// <summary>
@@ -80,6 +89,5 @@ namespace ChristMasTree
             }
             return branches;
         }
-
     }
 }

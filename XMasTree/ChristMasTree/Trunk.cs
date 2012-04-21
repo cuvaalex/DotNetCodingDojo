@@ -45,5 +45,11 @@ namespace ChristMasTree
             return lastBranchSize / 3;
         }
 
+
+        internal string ToString(int padding)
+        {
+            String trunk = this.ToString();
+            return trunk.PadLeft(padding + (trunk.Length / 2));            
+        }
     }
 }

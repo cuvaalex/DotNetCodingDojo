@@ -94,7 +94,7 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I press Draw");
 #line hidden
 #line 14
- testRunner.Then("the result on the screen should be :", "*\r\n* *\r\n* * *\r\n|_|", ((TechTalk.SpecFlow.Table)(null)));
+ testRunner.Then("the result on the screen should be :", "  *\r\n * *\r\n* * *\r\n |_|", ((TechTalk.SpecFlow.Table)(null)));
 #line hidden
             this.ScenarioCleanup();
         }
@@ -112,7 +112,7 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I press Draw");
 #line hidden
 #line 25
- testRunner.Then("the result on the screen should be :", "*\r\n* *\r\n* * *\r\n* * * *\r\n|_|", ((TechTalk.SpecFlow.Table)(null)));
+ testRunner.Then("the result on the screen should be :", "   *\r\n  * *\r\n * * *\r\n* * * *\r\n  |_|", ((TechTalk.SpecFlow.Table)(null)));
 #line hidden
             this.ScenarioCleanup();
         }
@@ -130,7 +130,7 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I press Draw");
 #line hidden
 #line 36
- testRunner.Then("the result on the screen should be :", "*\r\n* *\r\n* * *\r\n* * * *\r\n* * *\r\n|_|", ((TechTalk.SpecFlow.Table)(null)));
+ testRunner.Then("the result on the screen should be :", "   *\r\n  * *\r\n * * *\r\n* * * *\r\n * * *\r\n  |_|", ((TechTalk.SpecFlow.Table)(null)));
 #line hidden
             this.ScenarioCleanup();
         }
@@ -148,7 +148,7 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I press Draw");
 #line hidden
 #line 48
- testRunner.Then("the result on the screen should be :", "*\r\n* *\r\n* * *\r\n* * * *\r\n* * *\r\n* * * *\r\n|_|", ((TechTalk.SpecFlow.Table)(null)));
+ testRunner.Then("the result on the screen should be :", "   *\r\n  * *\r\n * * *\r\n* * * *\r\n * * *\r\n* * * *\r\n  |_|", ((TechTalk.SpecFlow.Table)(null)));
 #line hidden
             this.ScenarioCleanup();
         }
@@ -166,7 +166,8 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I press Draw");
 #line hidden
 #line 61
- testRunner.Then("the result on the screen should be :", "*\r\n* *\r\n* * *\r\n* * * *\r\n* * *\r\n* * * *\r\n* * * * *\r\n* * * * * *\r\n|__|", ((TechTalk.SpecFlow.Table)(null)));
+ testRunner.Then("the result on the screen should be :", "     *\r\n    * *\r\n   * * *\r\n  * * * *\r\n   * * *\r\n  * * * *\r\n * * * * *\r\n* * * * * " +
+                    "*\r\n    |__|", ((TechTalk.SpecFlow.Table)(null)));
 #line hidden
             this.ScenarioCleanup();
         }

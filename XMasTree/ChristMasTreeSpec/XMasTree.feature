@@ -13,10 +13,10 @@ Scenario: Tree of 3 lines
 	When I press Draw
 	Then the result on the screen should be :
 	"""
-	*
-	* *
+	  *
+	 * *
 	* * *
-	|_|
+	 |_|
 	"""
 
 Scenario: Tree of 4 lines
@@ -24,51 +24,51 @@ Scenario: Tree of 4 lines
 	When I press Draw
 	Then the result on the screen should be :
 	"""
-	*
-	* *
-	* * *
+	   *
+	  * *
+	 * * *
 	* * * *
-	|_|
+	  |_|
 	"""
 Scenario: Tree of 5 lines
 	Given I have entered 5 into XMas Tree Software
 	When I press Draw
 	Then the result on the screen should be :
 	"""
-	*
-	* *
-	* * *
+	   *
+	  * *
+	 * * *
 	* * * *
-	* * *
-	|_|
+	 * * *
+	  |_|
 	"""
 Scenario: Tree of 6 lines
 	Given I have entered 6 into XMas Tree Software
 	When I press Draw
 	Then the result on the screen should be :
 	"""
-	*
-	* *
-	* * *
+	   *
+	  * *
+	 * * *
 	* * * *
-	* * *
+	 * * *
 	* * * *
-	|_|
+	  |_|
 	"""
 Scenario: Tree of 8 lines
 	Given I have entered 8 into XMas Tree Software
 	When I press Draw
 	Then the result on the screen should be :
 	"""
-	*
-	* *
-	* * *
-	* * * *
-	* * *
-	* * * *
-	* * * * *
+	     *
+	    * *
+	   * * *
+	  * * * *
+	   * * *
+	  * * * *
+	 * * * * *
 	* * * * * *
-	|__|
+	    |__|
 	"""
 
 

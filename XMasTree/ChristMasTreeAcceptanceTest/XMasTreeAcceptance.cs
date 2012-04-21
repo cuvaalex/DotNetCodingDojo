@@ -10,30 +10,30 @@ namespace ChristMasTreeAcceptanceTest
     [TestFixture]
     public class XMasTreeAcceptance
     {
-        [TestCase(  "*\r\n"
-            +       "* *\r\n"
+        [TestCase(  "  *\r\n"
+            +       " * *\r\n"
             +       "* * *\r\n"
-            + "|_|", 3)]
-        [TestCase(  "*\r\n"
-            +       "* *\r\n"
-            +       "* * *\r\n"
+            + " |_|", 3)]
+        [TestCase(  "   *\r\n"
+            +       "  * *\r\n"
+            +       " * * *\r\n"
             +       "* * * *\r\n"
-            + "|_|", 4)]
-        [TestCase(  "*\r\n"
-            +       "* *\r\n"
-            +       "* * *\r\n"
+            + "  |_|", 4)]
+        [TestCase(  "   *\r\n"
+            +       "  * *\r\n"
+            +       " * * *\r\n"
             +       "* * * *\r\n"
-            +       "* * *\r\n"
-            + "|_|", 5)]
-        [TestCase(  "*\r\n"
-            +       "* *\r\n"
-            +       "* * *\r\n"
-            +       "* * * *\r\n"
-            +       "* * *\r\n"
-            +       "* * * *\r\n"
-            +       "* * * * *\r\n"
+            +       " * * *\r\n"
+            + "  |_|", 5)]
+        [TestCase(  "     *\r\n"
+            +       "    * *\r\n"
+            +       "   * * *\r\n"
+            +       "  * * * *\r\n"
+            +       "   * * *\r\n"
+            +       "  * * * *\r\n"
+            +       " * * * * *\r\n"
             +       "* * * * * *\r\n"
-            + "|__|", 8)]
+            + "    |__|", 8)]
         public void ShouldReturnAXMasTree(String patern, int size)
         {
             XMasTree tree = new XMasTree(size);
