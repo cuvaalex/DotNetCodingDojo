@@ -102,11 +102,11 @@ namespace RomanNumeralSpec
 #line 34
 this.ScenarioSetup(scenarioInfo);
 #line 35
- testRunner.Given(string.Format("I have entered {0}", romanNumerial));
+ testRunner.Given(string.Format("I have entered {0} as Romanum", romanNumerial));
 #line 36
  testRunner.When("I press convert");
 #line 37
- testRunner.Then(string.Format("the result should be {0}", arabicNumber));
+ testRunner.Then(string.Format("the result should be {0} as Arabic", arabicNumber));
 #line hidden
             this.ScenarioCleanup();
         }
@@ -126,11 +126,11 @@ this.ScenarioSetup(scenarioInfo);
 #line 49
 this.ScenarioSetup(scenarioInfo);
 #line 50
-testRunner.Given("I have entered <ArabicNumber>");
+testRunner.Given(string.Format("I have entered {0} as Arabic", arabicNumber));
 #line 51
 testRunner.When("I press convert");
 #line 52
-testRunner.Then(string.Format("the result should be {0}", romanNumerial));
+testRunner.Then(string.Format("the result should be {0} as Romanum", romanNumerial));
 #line hidden
             this.ScenarioCleanup();
         }

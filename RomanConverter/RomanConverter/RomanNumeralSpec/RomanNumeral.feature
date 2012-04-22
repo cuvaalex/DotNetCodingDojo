@@ -32,9 +32,9 @@ In addition, the class should have two instance methods. The method toString() r
 represents the Roman numeral. The method toInt() returns the value of the Roman numeral as an int.
 
 Scenario Outline: Roman to Arabic
-	Given I have entered <romanNumerial>
+	Given I have entered <romanNumerial> as Romanum
 	When I press convert
-	Then the result should be <arabicNumber>
+	Then the result should be <arabicNumber> as Arabic
 
 Scenarios: 
 | romanNumerial | arabicNumber |
@@ -47,9 +47,9 @@ Scenarios:
 | MCMXCV        | ERROR        |
 
 Scenario Outline: Arabic to Roman
-Given I have entered <ArabicNumber>
+Given I have entered <arabicNumber> as Arabic
 When I press convert
-Then the result should be <romanNumerial>
+Then the result should be <romanNumerial> as Romanum
 
 Scenarios: 
 | romanNumerial | arabicNumber |
